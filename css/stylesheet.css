@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=KoHo:wght@200&display=swap');
+
+body{
+	overflow: hidden;
+	overflow-y: scroll;
+	scroll-behavior: smooth;
+}
+
+#logo{
+	position: relative;
+	width: 60px;
+	min-height: 44px;
+	top: -5px;
+	left: 8%;
+}
+
+.fixed-btn{
+	color: black;
+	position: fixed;
+	bottom: 45px;
+	right: 25px;
+	background-color: transparent;
+	width: 50px;
+	height: 50px;
+	text-decoration: none;
+	visibility: hidden;
+}
+
+.fixed-btn.show{
+	visibility: visible;
+}
+
+.navbar {
+	height: 70px;
+	background-color: transparent;
+	border: none;
+	color: white;
+	z-index: 100;
+	transition: background-color 1s ease 0s;
+	transition: height 1s ease 0s;
+}
+
+.navbar a{
+	color: white;
+	margin: 10px;
+	z-index: 100;
+}
+
+.navbar.solid{
+	background-color: black;
+	transition: background-color 1s ease 0s;
+}
+
+.navbar.uncollapsed.expanded{
+	height: 60vh;
+	transition: height 1s ease 0s;
+	transition: background-color 1s ease 0s;
+}
+
+.nav-link{
+	transition: 0.3s;
+}
+
+#home{
+	width: 100%;
+	min-height: 960px;
+	padding: 0;
+	z-index: 10;
+	background-image: url(../images/bg.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-position: center;
+	box-sizing: border-box;
+}
+
+#home .container{
+	min-height: 10em;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#home h1{
+	position: relative;
+	color: white;
+	font-weight: 400;
+	font-size: 40px;
+	font-family: 'KoHo',sans-serif;
+	font-weight: bolder;
+	margin-top: 35vh; 
+	float: left;
+	left: 6.9em;
+	width: 15rem;
+	z-index: 10;
+}
+
+#home #p1{
+	position: relative;
+	color: white;
+	font-family: 'KoHo',sans-serif;
+	font-size: 20px;
+	font-weight: bolder;
+	width: 15rem;
+	float: left;
+	left: 1.9em;
+	margin-top: 42vh;
+}
+
+#home #p2{
+	position: relative;
+	color: white;
+	font-family: 'KoHo',sans-serif;
+	font-size: 20px;
+	font-weight: bolder;
+	width: 15rem;
+	float: left;
+	left: -10em;
+	margin-top: 47vh;
+}
+
+#home #home-button{
+	position: relative;
+	color: white;
+	width: 10rem;
+	float: left;
+	left: -28em;
+	margin-top: 52vh;
+	border: 1px solid white;
+}
+
+#home #home-button:hover{
+	background-color: rgba(255, 255, 255, 0.144);
+}
+
+#home #home-button a {
+	position: relative;
+	color: white;
+	text-decoration: none;
+	font-family: 'KoHo',sans-serif;
+	font-weight: bolder;
+	font-size: 16px;
+}
+
+.btn.btn-info{
+	background: none;
+	border: none;
+}
+
+.btn:focus{
+	outline: none;
+	box-shadow: none;
+}
+
+#collapse-btn{
+	background: none;
+	color: white !important;
+	z-index: 10000 !important;
+	position: relative;
+	top: -0.75rem;
+	right: 20px;
+	width: 40px;
+	height: 40px;
+	border: none;
+	align-items: left;
+}
+
+#collapse-btn :visited{
+	border: none;
+	box-shadow: none;
+}
+
+#collapse-btn :active{
+	border: none;
+	box-shadow: none;
+}
+
+#about{
+	/* background-color: blue; */
+	background-color: rgb(239,239,239);
+	color: black;
+	width: 100%;
+	min-height: 500px;
+	box-sizing: border-box;
+	padding-top: 5%;
+	z-index: 100;
+}
+
+#about h2{
+	position: relative;
+	font-family: 'KoHo',sans-serif;
+	font-weight: bolder;
+	font-size: 22px;
+	padding-top: 3%;
+}
+
+#about p{
+	position: relative;
+	font-family: 'KoHo',sans-serif;
+	font-weight: bold;
+	font-size: 16px;
+	padding-top: 5%;
+}
+
+.slideshow {  
+	width: 525px;  
+	height: 325px;  
+	overflow: hidden;
+	border: 3px solid #f2f2f2;
+	box-shadow: 10px 10px 5px #ccc;
+ }  
+ .slideshow ul {  
+	width: 400%;  
+	height: 200px;
+	padding:0; margin:0;
+	list-style:none;
+ }  
+ .slideshow li { float: left; }
+
+#facebook-btn{
+	margin-top: 10px;
+	margin-right: 16px;
+	margin-bottom: 30px;
+}
+
+#linkedin-btn{
+	margin-top: 10px;
+	margin-right: 16px;
+	margin-bottom: 30px;
+}
+
+#github-btn{
+	margin-top: 10px;
+	margin-right: 16px;
+	margin-bottom: 30px;
+}
+
+#github-modal{
+	margin-left: 10px;
+}
+
+#projects{
+	width: 100%;
+	color: black;
+	text-align: center;
+	padding-bottom: 100px;
+}
+
+#projects h1{
+	position: relative;
+	font-family: 'KoHo',sans-serif;
+	font-weight: bolder;
+	font-size: 36px;
+	padding-top: 3%;
+}
+
+#projects h2{
+	position: relative;
+	font-family: 'KoHo',sans-serif;
+	font-weight: bold;
+	font-size: 22px;
+	padding-top: 3%;
+}
+
+div.picture1{
+	position: relative;
+	width: 300px;
+	height: 200px;
+	margin: 3%;
+	border-radius: 20px;
+	box-shadow: 5px 5px 10px black;
+	content: url(../images/TC2019.png);
+}
+
+
+#main-footer{
+	background-color: rgb(239,239,239);
+	padding-top: 6vh;
+	padding-bottom: 6vh;
+	max-width: 100% !important;
+	text-align: center;
+}
+
+#email-btn{
+	position: relative;
+	border-radius: 50%;
+	padding: 1em;
+	background-color: cornflowerblue;
+}
+
+#phone-btn{
+	position: relative;
+	border-radius: 50%;
+	padding: 1em;
+	background-color: cornflowerblue;
+}
+
+#copyright{
+	position: relative;
+	font-family: 'KoHo',sans-serif;
+	font-weight: bold;
+	margin-top: 3vh;
+}
+
+#AA-btn{
+	background: none;
+	border: none;
+	transition: all 0.5s;
+}
+
+#AA-btn h3{
+	z-index: 100;
+	color: black;
+	position: relative;
+	top: 20%;
+	text-align: left;
+}
+
+#AA-btn:hover #aa-img{
+	display: none;
+}
+
+#AA-btn:hover::before{
+	content: url(../images/testAssistantHover.png);
+}
+
+#AA-btn:hover {
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+#AA-btn :visited{
+	border: none;
+	box-shadow: none;
+}
+
+#AA-btn :active{
+	border: none;
+	box-shadow: none;
+}
+
+#FS-btn{
+	background: none;
+	border: none;
+	transition: all 0.5s;
+}
+
+#FS-btn :visited{
+	border: none;
+	box-shadow: none;
+}
+
+#FS-btn :active{
+	border: none;
+	box-shadow: none;
+}
+
+#FS-btn:hover #fs-img{
+	display: none;
+}
+
+#FS-btn:hover::before{
+	content: url(../images/folderSystemHoverNew.png);
+}
+
+#FS-btn:hover {
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+	background-color: transparent;
+}
+

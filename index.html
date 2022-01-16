@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="shortcut icon" type="image/logo" href="images/logoFavicon.ico" />
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous"/>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/stylesheet.css" rel="stylesheet">
+
+    <title>Jason Tan</title>
+  </head>
+  <body>
+
+    <a class="fixed-btn" href="#home"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-arrow-up-square-fill" viewBox="0 0 16 16">
+      <path d="M2 16a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2zm6.5-4.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 1 0z"/>
+    </svg></a>  
+    <!-- HOME SECTION -->
+    <section id="home">
+        <h1>Hi I'm Jason.</h1>
+        <p id="p1">Software Engineer</p>
+        <p id="p2">McMaster University</p>
+        <button type="button" class="btn btn-outline-secondary" id="home-button"><a href="#about">Learn More</a></button>
+    </section>
+
+    <!-- NAVBAR  -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-default">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#home" id="logo">
+            <img src="images/logo.png" />
+        </a>
+        <button id="collapse-btn" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navBar" aria-controls="navBar" aria-expanded="false" aria-label="Toggle navigation">
+          <!-- <span class="navbar-toggler-icon"></span> -->
+          <img src="images/toggler.png" width="40px" height="40px" style="position: relative; left: -12px; top: -4px;"/>
+        </button>
+        <div class="collapse navbar-collapse" id="navBar">
+          <ul class="navbar-nav ms-auto pe-5 flex-wrap">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="files/Resume - Jason Tan.pdf" target="_blank">Resume</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#main-footer">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ABOUT SECTION -->
+    <section id="about">
+      <div class="container">
+        <div class="row gx-3">
+          <div class="col-xl-6">
+          <div class="slideshow slideshow2">  
+                <ul>
+                  <li><img src="images/TC2019.png" alt="TC2019" width="525px" height="325px"/></li>
+                  <li><img src="images/pic1.png" alt="pic1" width="525px" height="325px" /></li>
+                  <li><img src="images/pic2.png" alt="pic2" width="525" height="325" /></li>
+                  <li><img src="images/pic3.png" alt="pic3" width="525" height="325" /></li>
+                </ul>  
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <h2 style="font-weight: bolder;">Learn About Me!</h2>
+            <p>
+              I am a current software engineering student
+              attending McMaster University. I am
+              an adventurous student, willing to
+              tackle any problem with the
+              tenacity to solve it. I hope to pursue a career in software development.
+              I enjoy most
+              sports and consider myself as an
+              active person, who enjoys bringing
+              active energy into my work and
+              learning environment.
+            </p>
+
+            <a href="https://www.facebook.com/profile.php?id=100000112359881" class="btn btn-info" target="_blank" role="button">
+              <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16" id="facebook-btn">
+                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+              </svg>
+            </a>
+
+            <a href="https://www.linkedin.com/in/jason-tan62/" class="btn btn-info" target="_blank" role="button">
+              <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16" id="linkedin-btn">
+                <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+              </svg>
+            </a>
+
+            <a href="https://github.com/tan-jason" class="btn btn-info" target="_blank" role="button">
+              <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16" id="github-btn">
+                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+              </svg>
+            </a>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects">
+      <div class="container">
+        <div class="row g-2">
+          <div class="col-lg-12">
+            <div class="p-3">
+              <h1>Projects</h1>
+              <hr style="background-color: black; color: black; border: 0; width: 30%; margin-right: auto; margin-left: auto; margin-top: 20px;">
+            </div>
+          </div>
+          <div class="col-xl-6">
+            <div class="p-3">
+              <!-- Folder System modal button -->
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#folderModal" id="FS-btn">
+                <span><img src="images/folderSystem.png" width="100%" height="450px" id="fs-img"/></span>
+              </button>
+
+              <!-- Folder System Modal -->
+              <div class="modal fade" id="folderModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h3 class="modal-title" id="folderTitle">Folder System</h3>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16" id="github-modal">
+                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                      </svg>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body" style="text-align: left;">
+                      <h3>Project Description</h3>
+                      <p>
+                        A program designed to mock a file system/finder program. The program offers a fully functional GUI 
+                        created using Java. 
+                      </p>
+
+                      <h3>Functionality</h3>
+                      <p>
+                        <ul>
+                          <li>Adding, removing, organizing and editing pre-existing folders/files</li>
+                          <li>A binary search for folders and files</li>
+                          <li>Alphabetical sort within folders</li>
+                          <li>Saving folder system and opening a pre-existing one</li>
+                        </ul>
+                      </p>
+
+                      <h3>Demos</h3>
+                      <br>
+                      <h5>Hierarchal Structure</h5>
+                      <img src="images/folderSystem1.gif" style="width: 100%; max-width: 100%; height: auto;"/>
+                      
+                      <br>
+                      <br>
+
+                      <h5>Usage</h5>
+                      <img src="images/folderSystem2.gif" style="width: 100%; max-width: 100%; height: auto;"/>
+
+                    </div>
+                    <div class="modal-footer">
+                      <a class="btn btn-primary" href="https://github.com/tan-jason/FolderSystem" target="_blank" role="button">Folder System</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+          <div class="col-xl-6">
+            <div class="p-3">
+              <!-- Assessment Assistant modal button -->
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#assessmentModal" id="AA-btn">
+                <img src="images/assessmentAssistant.png" width="100%" height="450px" id="aa-img"/>
+              </button>
+
+              <!-- Assessment Assistant Modal -->
+              <div class="modal fade" id="assessmentModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h3 class="modal-title" id="assessmentTitle">Assessment Assistant</h3>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16" id="github-modal">
+                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                      </svg>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body" style="text-align: left;">
+                      <h3>Project Description</h3>
+                      <p>
+                        The Assessment Assistant is a program designed to aid teachers by helping them manage a database of 
+                        questions and creating a test and exporting it to a PDF. The program is divided into two sub-programs 
+                        which are designed to perform different tasks. These two programs are the database manager and test manager.
+                        The project offers  fully functional GUI and coded entirely on Java using Eclipse and the IText API.
+                      </p>
+
+                      <h3>Functionality</h3>
+                      <p>
+                        Database Manager
+                        <ul>
+                          <li>Adds, removes or edit multiple choice and short answer questions of different categories
+                            <li>Knowledge, thinking, application, communication</li>
+                          </li>
+                          <li>A binary search for folders and files</li>
+                          <li>Alphabetical sort within folders</li>
+                          <li>Saving folder system and opening a pre-existing one</li>
+                        </ul>
+                      </p>
+
+                      <h3>Demos</h3>
+                      <br>
+                      <h5>Adding, removing and editing short answer questions</h5>
+                      <img src="images/assessment1.gif" style="width: 100%; max-width: 100%; height: auto;"/>
+
+                      <br>
+                      <br>
+                      <h5>Editing multiple choice questions using the GUI</h5>
+                      <img src="images/assessment2.gif" style="width: 100%; max-width: 100%; height: auto;" />
+
+                      <br>
+                      <br>
+                      <h5>Exporting test as a PDF</h5>
+                      <img src="images/assessment3.gif" style="width: 100%; max-width: 100%; height: auto;" />
+
+                    </div>
+                    <div class="modal-footer">
+                      <a class="btn btn-primary" href="https://github.com/tan-jason/Test-Assistant" target="_blank" role="button">Assessment Assistant</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <section id="main-footer">
+      <div class="container">
+        <div class="row justify-content-md-center">
+          <div class="col-lg-1">
+            <!-- Email Icon Button -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#emailModal" id="email-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
+              </svg>
+            </button>
+
+            <!-- Email Modal -->
+            <div class="modal fade" id="emailModal" tabindex="-1" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
+                <div class="modal-content">
+                  <div class="modal-body" style="text-align: center;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                      <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
+                    </svg>
+                    <br>
+                    <br>
+                    <p>jasontan62@gmail.com</p>
+                    <p>tanj60@mcmaster.ca</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-1">
+              <!-- Phone Icon Button -->
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#phoneModal" id="phone-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                  <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                </svg>
+              </button>
+
+              <!-- Phone Modal -->
+              <div class="modal fade" id="phoneModal" tabindex="-1" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
+                  <div class="modal-content">
+                    <div class="modal-body" style="text-align: center;">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                        <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                      </svg>
+                      <br>
+                      <br>
+                      <p>647-971-8862</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+                
+          </div>
+        </div>
+        <div class="row justify-content-md-center">
+          <div class="col-md-2">
+            <p id="copyright">Copyright &copy; Jason Tan</p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/@popperjs/core@2.4.0/dist/umd/popper.min.js"></script>  -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script> -->
+    <!-- <script src="js/bootstrap.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  </body>
+</html>

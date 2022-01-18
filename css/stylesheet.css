@@ -67,8 +67,6 @@ body{
 	padding: 0;
 	z-index: 10;
 	box-sizing: border-box;
-<<<<<<< HEAD
-=======
 	background-image: url(../images/bgNew.png);
 	background-repeat: no-repeat;
 	background-position: 70% 16.5%; 
@@ -76,7 +74,6 @@ body{
 
 #home-container{
 	width: 100%;
->>>>>>> 6cc667b465ff505fa0e1a5bd6206c99e9701d44e
 	overflow: auto;
 }
 

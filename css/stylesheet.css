@@ -104,9 +104,8 @@ body{
 	font-size: 20px;
 	font-weight: bolder;
 	width: 15rem;
-	float: left;
-	left: 1.9em;
-	margin-top: 42vh;
+	left: 13.75em;
+	margin-top: 0vh;
 }
 
 #home #p2{
@@ -117,8 +116,8 @@ body{
 	font-weight: bolder;
 	width: 15rem;
 	float: left;
-	left: 13.85em;
-	margin-top: -1vh;
+	left: 13.75em;
+	margin-top: 0vh;
 }
 
 #home #home-button{

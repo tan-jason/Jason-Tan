@@ -123,10 +123,10 @@ body{
 #home #home-button{
 	position: relative;
 	color: white;
-	width: 10rem;
+	width: 9rem;
 	float: left;
-	left: 2.1em;
-	margin-top: 5vh;
+	left: 2em;
+	margin-top: 5.5vh;
 	border: 1px solid white;
 }
 
